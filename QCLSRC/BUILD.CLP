@@ -7,5 +7,6 @@ MONMSG MSGID(CPF0000)
 CPYF FROMFILE(QTEMP/QCLSRC)   + 
      TOFILE(CORSOGIT/QCLSRC)  + 
      FROMMBR(*ALL)            + 
+     TOMBR(*FROMMBR)          +
      MBROPT(*REPLACE)          
 ENDPGM
