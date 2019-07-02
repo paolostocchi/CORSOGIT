@@ -1,2 +1,3 @@
 QCLSRC    BUILD     CLP       Programma di installazione
 QCLSRC    CONV_A2E  CLLE      Programma per conversioni
+QMNUSRC   CORSOGIT  MENU      Esempio menù
