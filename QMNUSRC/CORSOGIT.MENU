@@ -1,0 +1,202 @@
+:pnlgrp. 
+.*
+:copyr.
+Sviluppo Iterativo (autore: Andrea Ribuoli)
+.*
+:var name=zmenu. 
+.*
+:keyl name=menukeys. 
+:keyi key=F1 
+        help=helpf1 
+        action=help. 
+F1=Help
+:keyi key=F3 
+        help=exit 
+        action='exit set' 
+        varupd=no. 
+F3=Exit
+:keyi key=F4 
+        help=prompt 
+        action=prompt.
+F4=Prompt
+:keyi key=F5 
+        help=reload 
+        action='cmd reload'.
+F5=Reload
+:keyi key=F9 
+        help=retrieve 
+        action=retrieve.
+F9=Retrieve
+:keyi key=enter
+      help=enter
+      action=enter.
+:keyi key=help
+      help=help
+      action=help.
+:keyi key=home
+      help=home
+      action=home.
+:ekeyl. 
+.*
+:panel name=prmenu
+       help='menu/help'
+       keyl=menukeys
+       enter='MSG CPD9817 QCPFMSG'
+       panelid=zmenu
+       topsep=sysnam.
+Sviluppo Iterativo con GitHub
+.*
+:menu DEPTH='*'
+      SCROLL=YES
+      BOTSEP=SPACE.
+:topinst.Scegli una delle seguenti opzioni:
+.*
+:menui option=1 
+  action='cmd wrkactjob job(curl_testa)'
+  help='menu/option1'. 
+Gestisci i processi di reload
+.*
+:menui option=2 
+  action='cmd success_01'
+  help='menu/nohelp'. 
+Avvia il tester (32=ok; 64=ok)
+.*
+:menui option=3 
+  action='cmd tester'
+  help='menu/nohelp'. 
+Avvia il tester
+.*
+:emenu. 
+.*
+:cmdline size=long. 
+Scelta o comando 
+.* 
+:epanel.  
+.*
+:help name=keyl.
+Tasti funzione - Aiuto
+:xh3.Tasti funzione
+:ehelp.
+.*
+:help name=helpf1.
+:parml.
+:pt.F1=Help
+:pd.
+Fornisce aiuto.
+:eparml.
+:ehelp.
+.*
+:help name=enter.
+:parml.
+:pt.Invio
+:pd.
+Invio.
+:eparml.
+:ehelp.
+.*
+:help name=help.
+:parml.
+:pt.Aiuto
+:pd.
+Fornisce aiuto su help.
+:eparml.
+:ehelp.
+.*
+:help name=home.
+:parml.
+:pt.Home
+:pd.
+Fornisce aiuto su home.
+:eparml.
+:ehelp.
+.*
+:help name=exit.
+:parml.
+:pt.F3=Exit
+:pd.
+Termina il menù.
+:eparml.
+:ehelp.
+.*
+:help name=retrieve.
+:parml.
+:pt.F9=Retrieve
+:pd.
+Ripeti il comando.
+:eparml.
+:ehelp.
+.*
+:help name=prompt.
+:parml.
+:pt.F4=Prompt
+:pd.
+Fornisce supporto.
+:eparml.
+:ehelp.
+.*
+:help name=reload.
+:parml.
+:pt.F5=Reload
+:pd.
+Ricarica il pacchetto.
+:eparml.
+:ehelp.
+.*
+:help name='menu/help'.
+WebSockets e IBM i - pratica
+:p.
+Spiegazione.
+:ehelp.
+.*
+:help name='menu/option1'.
+Opzione 1: Fa qualcosa di utile
+:xh3.Opzione 1: Fa qualcosa di utile davvero
+:p.
+Spiegazione.
+:ehelp.
+.*
+:help name='menu/termina01'.
+Termina DE_TRAIN_01
+:xh3.Termina DE_TRAIN_01
+:p.
+Spiegazione.
+:ehelp.
+.*
+:help name='menu/avvia01'.
+Avvia DE_TRAIN_01
+:xh3.Avvia DE_TRAIN_01
+:p.
+Spiegazione.
+:ehelp.
+.*
+:help name='menu/termina03'.
+Termina DE_TRAIN_03
+:xh3.Termina DE_TRAIN_03
+:p.
+Spiegazione.
+:ehelp.
+.*
+:help name='menu/avvia03'.
+Avvia DE_TRAIN_03
+:xh3.Avvia DE_TRAIN_03
+:p.
+Spiegazione.
+:ehelp.
+.*
+:help name='menu/redis'.
+Avvia Redis server a 64bit
+:xh3.Avvia Redis
+:p.
+Spiegazione Avvia Redis
+:ehelp.
+.*
+:help name='menu/nohelp'.
+Aiuto non fornito
+:xh3.Aiuto non fornito
+:p.
+Aiuto non fornito
+:ehelp.
+.*
+
+:epnlgrp. 
+.*
