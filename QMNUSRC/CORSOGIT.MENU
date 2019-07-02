@@ -56,16 +56,6 @@ Sviluppo Iterativo con GitHub
   help='menu/option1'. 
 Gestisci i processi di reload
 .*
-:menui option=2 
-  action='cmd success_01'
-  help='menu/nohelp'. 
-Avvia il tester (32=ok; 64=ok)
-.*
-:menui option=3 
-  action='cmd tester'
-  help='menu/nohelp'. 
-Avvia il tester
-.*
 :emenu. 
 .*
 :cmdline size=long. 
@@ -155,31 +145,6 @@ Opzione 1: Fa qualcosa di utile
 Spiegazione.
 :ehelp.
 .*
-:help name='menu/termina01'.
-Termina DE_TRAIN_01
-:xh3.Termina DE_TRAIN_01
-:p.
-Spiegazione.
-:ehelp.
-.*
-:help name='menu/avvia01'.
-Avvia DE_TRAIN_01
-:xh3.Avvia DE_TRAIN_01
-:p.
-Spiegazione.
-:ehelp.
-.*
-:help name='menu/termina03'.
-Termina DE_TRAIN_03
-:xh3.Termina DE_TRAIN_03
-:p.
-Spiegazione.
-:ehelp.
-.*
-:help name='menu/avvia03'.
-Avvia DE_TRAIN_03
-:xh3.Avvia DE_TRAIN_03
-:p.
 Spiegazione.
 :ehelp.
 .*
