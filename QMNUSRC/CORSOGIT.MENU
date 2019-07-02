@@ -145,9 +145,6 @@ Opzione 1: Fa qualcosa di utile
 Spiegazione.
 :ehelp.
 .*
-Spiegazione.
-:ehelp.
-.*
 :help name='menu/redis'.
 Avvia Redis server a 64bit
 :xh3.Avvia Redis
